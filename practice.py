@@ -1,3 +1,5 @@
+from ast import arg
+from audioop import mul
 from cmath import sqrt
 from time import sleep
 
@@ -32,6 +34,17 @@ for i in phone:
 #     print('is lowercase')
 
 def root(x):
-    print(sqrt(x))
+    return sqrt(x)
 
-root(12)
+# print(root(12))
+
+#nested funtion
+# print(round(abs(float(input('Enter a number: ')))))
+
+def multiply(*args):
+    num = args[0]
+    for i in args[1::]:
+        num *= i
+    return num
+
+# print(multiply(3,4,9))
