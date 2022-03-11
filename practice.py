@@ -1,3 +1,4 @@
+from cmath import sqrt
 from time import sleep
 
 
@@ -27,3 +28,10 @@ for i in phone:
         continue
     # print(i, end='')
 
+# if(name[0].islower()):
+#     print('is lowercase')
+
+def root(x):
+    print(sqrt(x))
+
+root(12)
