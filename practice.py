@@ -48,3 +48,10 @@ def multiply(*args):
     return num
 
 # print(multiply(3,4,9))
+
+def hello(**args):
+    print('Hello', end=' ')
+    for key,value in args.items():
+        print(value, end=' ')
+
+# hello(first='kenji', last='greene')
